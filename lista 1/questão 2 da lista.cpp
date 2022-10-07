@@ -6,7 +6,7 @@ int main() {
 	
 	float media, N1, N2, N3;
 	
-	printf("Calculadora de M�dias com 3 notas\n");
+	printf("Calculadora de Médias com 3 notas\n");
 	
 	printf("Digite aqui sua primeira nota\n");
 	scanf("%f",&N1);
@@ -19,7 +19,9 @@ int main() {
 	
 	media = N1 + N2 + N3 / 3;
 	
-	printf("O valor calculado da m�dia entre os n�meros %f, %f, %f foi: %f", N1,N2,N3,media);
+	printf("O valor calculado da média entre os números %.2f, %.2f, %.2f foi: %.2f", N1,N2,N3,media);
+	
+	//não fuincionou por que, a falta do parêntese faz com que apenas a variável N3 fosse dividida
 	
 	return 0;
 }
